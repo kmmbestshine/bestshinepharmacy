@@ -1,0 +1,138 @@
+Pharmacies
+Orders
+Doctors
+Users
+Areas
+Addresses
+Medicines
+Revenue (No CRUD)
+--------------------------------------------------
+Search:
+Seeds
+File Storage
+Authorization
+Guards
+Create admin through console command
+Soft delete
+Mutators
+Email verification
+Notifications (Using email)
+Queue
+Task Scheduling
+Verification routing
+Forgot password
+Stripe API (Visa)
+--------------------------------------------------
+Others:
+1- Also any other routes like attend or edit profile must be verified
+2- Doctor: All this role does is just modify the flow of order (Doctor can update any state to any?!)
+--------------------------------------------------
+User:
+	Update Profile
+	Show Order
+	Create Order
+	Update Order
+	CRUD Addresses
+
+Doctor:
+	Create Order
+	Update Order (Status)
+	Create Medicine
+
+Pharmacy:
+	(Like Doctor)
+	CRUD Doctor
+	Update Pharmacy Info
+--------------------------------------------------
+TODO:
+Template (Blade (extends))
+Migrations
+	Models
+	Seeders
+	Resources
+	Validations
+End-points
+Controllers
+
+Authorization (Gates, Policies)
+Task Scheduling
+Stripe API (Visa)
+--------------------------------------------------
+Tables:
+admins
+pharmacies
+doctors
+users
+roles
+areas
+addresses
+orders
+
+TAKE CARE OF Naming Convention !!!!!!
+TAKE CARE OF Naming Convention !!!!!!
+TAKE CARE OF Naming Convention !!!!!!
+
+
+order:
+++ creator id
+
+
+creator id     1   => name  
+type         doctor
+				
+					
+					2		=> name=null 
+				pharmacy
+				admin
+
+
+
+sarah
+doctors
+admin
+pharamcy
+medicine
+medicine pharmacy
+medicine order
+
+
+mohamed //doctor // pharamcy //
+users --
+orders ---
+address --
+areas --
+status --
+preciprtions --
+
+--------------------------------------------------
+
+Abd Allah:
+Auth, Authorization (+ View), Verify email, Reset password
+profile :update-show
+order (api)
+
+Ali:
+View
+Doctor: (unban-ban, package(optional))
+schedule commands: email last login
+
+Mohammed:
+Validation
+Order: status column and remove table (static Array)
+Auto complete medicine
+schedule commands: asign orders run every minute
+
+Sarah:
+Pharmacy: soft delete
+Revenue Tab
+crud for user: Addresses
+schedule commands: asign orders run every minute
+
+Tarek:
+Area
+Medicine
+user: login
+user: register
+verifiction
+welcome message
+send notification on order status change
